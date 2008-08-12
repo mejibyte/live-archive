@@ -40,7 +40,7 @@ int main(){
       s = 0;
       p = 0;
     }else if (a <= 0 && b > 0){
-      p = primes[b];
+      p = primes[b];x
       s = special[b];
     }
 
