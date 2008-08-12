@@ -1,0 +1,13 @@
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main(){
+  int n;
+  while (cin >> n && n != -1){
+    assert(n >= 0);
+    cout << f(n) << endl;
+  }
+  return 0;
+}

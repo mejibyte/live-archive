@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+
+string w[1000];
+
+bool comparar(const string &a, const string &b){
+  return (a.size() < b.size());
+}
+
+int main(){
+  int n, k, C=1;
+  while (cin >> n >> k && n+k){
+    for (int i=0; i<n; ++i){
+      cin >> w[i];
+    }
+
+    sort(w, w+n, comparar);
+    
+    if (C > 1) cout << endl;
+  }
+  return 0;
+}

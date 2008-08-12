@@ -1,0 +1,22 @@
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+typedef string node;
+typedef map<node, vector<node> > graph;
+
+int main(){
+  double length;
+  while (cin >> length){
+    int cities;
+    cin >> cities;
+    graph g;
+    for (int i=0; i<cities; ++i){
+      string s;
+      cin >> s;
+      g[s] = vector<node>();
+    }
+  }
+  return 0;
+}

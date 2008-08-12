@@ -1,0 +1,50 @@
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+
+
+const int SIZE = 9999;
+
+//criba[i] = false si i es primo
+bool criba[SIZE+1];
+
+void buildCriba(){
+  memset(criba, false, sizeof criba);
+
+  criba[0] = criba[1] = true;
+  for (int i=4; i<=SIZE; i += 2){ //Pares
+    criba[i] = true;
+  }
+
+  for (int i=3; i<=SIZE; i += 2){
+    if (!criba[i]){
+      for (int j=i+i; j<=SIZE; j += i){
+        criba[j] = true;
+      }
+    }
+  }
+}
+
+int main(){
+  int c;
+  cin >> c;
+  while (c--){
+    int start, end;
+    cin >> start >> end;
+    bool visited[1000] = {false};
+    queue<pair<int, int> > q;
+    q.push(make_pair(0, start));
+    
+    while (q.size()){
+      int u = q.top().second;
+      int w = q.top().first;
+      q.pop();
+
+      if (1000 <= u && u <= 9999 && !
+    }
+  }
+
+  return 0;
+}

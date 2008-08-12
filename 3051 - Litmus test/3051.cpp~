@@ -1,0 +1,16 @@
+#include <cmath>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  double k, conc;
+  int m, n;
+  while (scanf("%lf %lf %d %d", k, conc, m, n) == 4 && (k+conc+m+n>0.0)){
+    double b = m*n*k;
+    double c = -b*conc;
+    double x = (-b + sqrt(b*b - 4*c)) / 2.0;
+    printf("%.3lf\n", -log(x/m));
+  }
+  return 0;
+}

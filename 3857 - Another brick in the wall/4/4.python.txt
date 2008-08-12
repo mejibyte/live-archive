@@ -1,0 +1,167 @@
+#!/usr/bin/env python
+
+# Brick
+# Phil Bordelon
+
+import os
+import sys
+
+DEBUG = os.getenv("DEBUG", False)
+
+# Use a large number that is longer than any possible maximum
+# distance for Dijkstra's.
+BIG_NUMBER = 999
+
+def dijkstra(wall_dict, source, dest):
+
+   # We're going to go through the nodes, finding the best-cost one each
+   # step, ending when we get to the destination.  We start with nothing
+   # more than the source node.  We prime the setup by starting with the
+   # "start" (surprise!) and priming the list to visit with all nodes
+   # adjacent to the start.
+   visited_list = [source]
+   to_visit_list = [(x, wall_dict[source]["connections"][x]) for x in wall_dict[source]["connections"]]
+   to_return = BIG_NUMBER
+   done = False
+   while not done:
+
+      # Find the cheapest edge in the to_visit_list.
+      short_edge = (None, BIG_NUMBER)
+      for elem in to_visit_list:
+         if elem[1] < short_edge[1]:
+            short_edge = elem
+
+      # Visit it!  Add it to the visited list, remove all other connections
+      # to it in the to_visit_list, and add nodes it connects to that we
+      # haven't gotten to yet, with proper weights.
+      node_to_visit, cost = short_edge
+      visited_list.append(node_to_visit)
+
+      # Strip the to_visit_list of instances of this node ...
+      to_visit_list = [x for x in to_visit_list if x[0] != node_to_visit]
+
+      # Get the new entries ...
+      if DEBUG:
+         print "Visiting " + repr(node_to_visit)
+
+      # ... get all new places to visit (skipping already-visited places) ...
+      new_visits = [x for x in wall_dict[node_to_visit]["connections"] if x not in visited_list]
+      
+      # ... and add them to the to_visit_list.  Also, bail if one of them is the dest.
+      connections = wall_dict[node_to_visit]["connections"]
+      for location in new_visits:
+         if location == dest:
+
+            # We made it to the destination node, and know what the cost of
+            # transit was.
+            done = True
+            to_return = connections[dest] + cost
+         else:
+            to_visit_list.append((location, cost + connections[location]))
+
+      if DEBUG:
+         print "Left to visit: " + repr(to_visit_list)
+
+   # Return the cost of transiting the grid.
+   return to_return
+
+def buildConnections(wall_dict, height, width):
+
+   # In this lovely function, we build the connections between the various
+   # bricks.  If two squares are adjacent to each other and have the same
+   # letter representation, they're part of the same brick, and so travel
+   # between them is free.  If the letter changes, though, that's a brick
+   # "crossing", which counts as an actual "move."
+
+   # First, we need to add the top and bottom "nodes."  We keep them
+   # out of the dictionary at first, then add them at the end.
+   top = {"connections": {}}
+   bottom = {"connections": {}}
+
+   # Now, we set paths between all nodes.  It costs 0 to move between
+   # adjacent nodes that have the same letter, otherwise it costs 1.
+   # This will incidentally give us the number of bricks necessary to
+   # remove to get to the bottom of the wall, as you will never reenter
+   # the same brick after leaving it (otherwise you could have stayed in
+   # the brick in the first place, as all movement inside it costs 0.)
+   for x, y in wall_dict:
+      this_block = wall_dict[(x, y)]
+      if x == 0:
+
+         # Top row.  We only need to connect from the top to it, as it
+         # will never be beneficial to go /back/ to the top from a lower
+         # brick.  We also need to make either this transit or the one
+         # to the bottom cost something; I arbitrarily chose to make this
+         # one cost.
+         top["connections"][(x, y)] = 1
+      if x == height - 1:
+      
+         # Bottom row.  Once again, it's not worth coming back /up/ from
+         # the bottom, as that's the goal, so don't bother making connections
+         # back up to this block.
+         this_block["connections"]["bottom"] = 0
+      else:
+         
+         # Check the block below.  If it's the same letter, the cost is
+         # zero; otherwise, it is one.
+         below_block = wall_dict[(x + 1, y)]
+         if this_block["letter"] == below_block["letter"]:
+
+            # Make transit between this block and the one below it free.
+            # We need to set the values in both directions, not just
+            # down ... for reasons that are obvious if you consider how
+            # devious us judges are.
+            this_block["connections"][(x + 1, y)] = 0
+            below_block["connections"][(x, y)] = 0
+         else:
+
+            # Ya gotsta pay the price for this transit.
+            this_block["connections"][(x + 1, y)] = 1
+            below_block["connections"][(x, y)] = 1
+
+      # Do the same for the block to the right.
+      if y < width - 1:
+         right_block = wall_dict[(x, y + 1)]
+         if this_block["letter"] == right_block["letter"]:
+
+            # Free ride!
+            this_block["connections"][(x, y + 1)] = 0
+            right_block["connections"][(x, y)] = 0
+         else:
+
+            # Not so much.
+            this_block["connections"][(x, y + 1)] = 1
+            right_block["connections"][(x, y)] = 1
+
+   # Finally, add the top and bottom to the dictionary.
+   wall_dict["top"] = top
+   wall_dict["bottom"] = bottom
+         
+if "__main__" == __name__:
+
+   dataset_count = int(sys.stdin.readline())
+   for dataset_loop in range(dataset_count):
+      
+      # Get the height and width ...
+      height, width = [int(x) for x in sys.stdin.readline().strip().split()]
+
+      # Then read the entire wall in.
+      wall_dict = {}
+      for i in range(height):
+         block_row = sys.stdin.readline().strip()
+         if len(block_row) != width:
+            sys.exit("ERROR: Invalid width of line '%s' (should be %d)!" % (block_row, width))
+         for j in range(width):
+
+            # Build the block for the big ol' table.  We don't set up
+            # connections between bits of bricks yet.
+            wall_dict[(i, j)] = {
+               "letter": block_row[j],
+               "connections": {}
+            }
+
+      # Now that we've read the wall in, build the connections.
+      buildConnections(wall_dict, height, width)
+
+      # Lastly, Dijkstra!
+      print dijkstra(wall_dict, "top", "bottom")

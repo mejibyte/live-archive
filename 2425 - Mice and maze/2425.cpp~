@@ -1,0 +1,38 @@
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int g[101][101];
+
+int main(){
+  int casos;
+  cin >> casos;
+  while (casos--){
+    
+    int n, e, t;
+    cin >> n >> e >> t;
+    for (int i=0; i<n; ++i){
+      for (int j=0; j<n; ++j){
+	g[i][j] = INT_MAX;
+      }
+      g[i][i] = 0;
+    }
+
+    int m;
+    cin >> m;
+    while (m--){
+      int i, j, k;
+      cin >> i >> j >> k;
+      g[i-1][j-1] = k;
+    }
+
+    for (int k=0; k<n; ++k){
+      for (int i=0; i<n; ++i){
+	for (int j=0; j<n; ++j){
+	}
+      }
+    }
+  }
+  return 0;
+}

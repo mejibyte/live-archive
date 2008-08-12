@@ -1,0 +1,14 @@
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+char vowels[] = {'a', 'e', 'i', 'o', 'u'}M
+
+int main(){
+  string s;
+  while (getline(cin, s) && s != "#"){
+
+  }
+  return 0;
+}

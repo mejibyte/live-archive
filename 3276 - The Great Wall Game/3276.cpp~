@@ -1,0 +1,77 @@
+#include <vector>
+#include <set>
+#include <queue>
+#include <iostream>
+
+using namespace std;
+
+typedef vector< vector<bool> > matrix;
+
+int di[] = {-1, +1, +0, +0};
+int dj[] = {+0, +0, -1, +1};
+
+bool isSolution(const matrix &u, const int &n){
+  for (int i=0; i<n; ++i){
+    bool good = true;
+    for (int j=0; j<n; ++j){
+      good &= u[i][j];
+    }
+    if (good) return true;
+  }
+
+  for (int j=0; j<n; ++j){
+    bool good = true;
+    for (int i=0; i<n; ++i){
+      good &= u[i][j];
+    }
+    if (good) return true;
+  }
+  //diagonals
+  bool left = true, right = true; //left is \, right is /
+  for (int i=0; i<n; ++i){
+    left &= u[i][i];
+    right &= u[i][n-i-1];
+  }
+  return (left || right);
+}
+
+int main(){
+  int n, C = 1;
+  while (scanf("%d", &n) == 1 && n){
+    matrix s(n, vector<bool>(n, false));
+    int x, y;
+    for (int i=0; i<n; ++i){
+      scanf("%d %d", &x, &y);
+      s[--x][--y] = true;
+    }
+
+    queue< pair< matrix, int > > q;
+    q.push(make_pair(s, 0));
+    set<matrix> visited;
+    visited.insert(s);
+    while (q.size()){
+      matrix u = q.front().first;
+      int w = q.front().second;
+      q.pop();
+
+      if (isSolution(u, n)){
+        printf("Board %d: %d moves required.\n", C++, w);
+        break;
+      }
+
+      for (int i=0; i<n; ++i){
+        for (int j=0; j<n; ++j){
+          if (u[i][j]){
+            for (int k=0; k<4; ++k){
+              int ni = i + di[k];
+              int nj = j + dj[k];
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  return 0;
+}
