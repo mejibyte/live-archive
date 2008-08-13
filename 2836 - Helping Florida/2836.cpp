@@ -19,11 +19,14 @@ using namespace std;
 bool round(vector< vector<string> > &b, set<string> &e, int candidates){
   int totalVotes = 0;
   map<string, int> v;
+
+  //Contar votos de cada balota
   for (int i=0; i<b.size(); ++i){
     v[b[i][0]]++;
     totalVotes++;
   }
 
+  //Meter todas las parejas persona-votos en un vector
   vector< pair<int, string> > to_eliminate;
   for (map<string, int>::iterator i=v.begin(); i != v.end(); ++i){
     if (i->second > (totalVotes/2)){
@@ -33,6 +36,7 @@ bool round(vector< vector<string> > &b, set<string> &e, int candidates){
     to_eliminate.push_back(make_pair(i->second, i->first));
   }
   sort(to_eliminate.begin(), to_eliminate.end());
+  //Hacer que el vector tenga solo los tipitos con menos votos
   while (to_eliminate.size() > 1 && to_eliminate.back().first > to_eliminate.front().first){
     to_eliminate.erase(to_eliminate.end()-1);
   }
@@ -52,6 +56,7 @@ bool round(vector< vector<string> > &b, set<string> &e, int candidates){
     return true;
   }
 
+  //Eliminar los que quedaron de ultimos
   for (int i=0; i<to_eliminate.size(); ++i){
     e.insert(to_eliminate[i].second);
   }
