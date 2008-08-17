@@ -1,0 +1,19 @@
+3 a ee i
+2 s st
+2 a e
+2 s t
+2 a e
+2 j k
+6 a e i o u aa
+6 s t r q p m
+1 a
+2 c s
+2 a aae
+2 c ca
+3 a e ae
+1 c
+2 a e
+6 b c d f g h
+2 a ae
+2 b c
+0

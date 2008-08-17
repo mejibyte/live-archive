@@ -1,0 +1,19 @@
+Data set 1:
+96 words.
+asast asasta asastee asasti aseest aseesta aseestee aseesti asist asista
+asistee asisti astas astasa astasee astasi astees asteesa asteesee asteesi
+astis astisa astisee astisi eesast eesasta eesastee eesasti eeseest eeseesta
+eeseestee eeseesti eesist eesista eesistee eesisti eestas eestasa eestasee eestasi
+eestees eesteesa eesteesee eesteesi eestis eestisa eestisee eestisi isast isasta
+isastee isasti iseest iseesta iseestee iseesti isist isista isistee isisti
+istas istasa istasee istasi istees isteesa isteesee isteesi istis istisa
+istisee istisi sast sasta sastee sasti seest seesta seestee seesti
+sist sista sistee sisti stas stasa stasee stasi stees steesa
+steesee steesi stis stisa stisee stisi
+
+Data set 2:
+36 words.
+asat asata asate aset aseta asete atas atasa atase ates
+atesa atese esat esata esate eset eseta esete etas etasa
+etase etes etesa etese sat sata sate set seta sete
+tas tasa tase tes tesa tese

@@ -1,0 +1,75 @@
+Data set 1:
+96 words.
+asast asasta asastee asasti aseest aseesta aseestee aseesti asist asista
+asistee asisti astas astasa astasee astasi astees asteesa asteesee asteesi
+astis astisa astisee astisi eesast eesasta eesastee eesasti eeseest eeseesta
+eeseestee eeseesti eesist eesista eesistee eesisti eestas eestasa eestasee eestasi
+eestees eesteesa eesteesee eesteesi eestis eestisa eestisee eestisi isast isasta
+isastee isasti iseest iseesta iseestee iseesti isist isista isistee isisti
+istas istasa istasee istasi istees isteesa isteesee isteesi istis istisa
+istisee istisi sast sasta sastee sasti seest seesta seestee seesti
+sist sista sistee sisti stas stasa stasee stasi stees steesa
+steesee steesi stis stisa stisee stisi
+
+Data set 2:
+36 words.
+asat asata asate aset aseta asete atas atasa atase ates
+atesa atese esat esata esate eset eseta esete etas etasa
+etase etes etesa etese sat sata sate set seta sete
+tas tasa tase tes tesa tese
+
+Data set 3:
+36 words.
+ajak ajaka ajake ajek ajeka ajeke akaj akaja akaje akej
+akeja akeje ejak ejaka ejake ejek ejeka ejeke ekaj ekaja
+ekaje ekej ekeja ekeje jak jaka jake jek jeka jeke
+kaj kaja kaje kej keja keje
+
+Data set 4:
+274337280 words.
+amapaqaraasaat amapaqaraasaata amapaqaraasaataa amapaqaraasaate amapaqaraasaati amapaqaraasaato amapaqaraasaatu amapaqaraasat amapaqaraasata amapaqaraasataa
+amapaqaraasate amapaqaraasati amapaqaraasato amapaqaraasatu amapaqaraaset amapaqaraaseta amapaqarasaat amapaqarasaata amapaqarasaataa amapaqarasaate
+amapaqarasaati amapaqarasaato amapaqarasaatu amapaqarasat amapaqarasata amapaqarasataa amapaqarasate amapaqarasati amapaqarasato amapaqarasatu
+amapaqaraset amapaqaraseta amapaqarasetaa amapaqarasete amapaqaraseti amapaqaraseto amapaqarasetu amapaqarasit amapaqarasita amapaqarasitaa
+amapaqarasite amapaqarasiti amapaqarasito amapaqarasitu amapaqarasot amapaqarasota amapaqarasotaa amapaqarasote amapaqarasoti amapaqarasoto
+amapaqarasotu amapaqarasut amapaqarasuta amapaqarasutaa amapaqarasute amapaqarasuti amapaqarasuto amapaqarasutu amapaqarataas amapaqarataasa
+amapaqarataasaa amapaqarataase amapaqarataasi amapaqarataaso amapaqarataasu amapaqaratas amapaqaratasa amapaqaratasaa amapaqaratase amapaqaratasi
+amapaqarataso amapaqaratasu amapaqarates amapaqaratesa amapaqaratesaa amapaqaratese amapaqaratesi amapaqarateso amapaqaratesu amapaqaratis
+amapaqaratisa amapaqaratisaa amapaqaratise amapaqaratisi amapaqaratiso amapaqaratisu amapaqaratos amapaqaratosa amapaqaratosaa amapaqaratose
+amapaqaratosi amapaqaratoso amapaqaratosu amapaqaratus amapaqaratusa amapaqaratusaa amapaqaratuse amapaqaratusi amapaqaratuso amapaqaratusu
+
+Data set 5:
+8 words.
+acas acasa asac asaca cas casa sac saca
+
+Data set 6:
+36 words.
+aaecaaaec aaecaaaeca aaecaaaecaae aaecaac aaecaaca aaecaacaae aaecaaeca aaecaaecaa aaecaaecaaae aaecaca
+aaecacaa aaecacaaae acaaaec acaaaeca acaaaecaae acaac acaaca acaacaae acaaeca acaaecaa
+acaaecaaae acaca acacaa acacaaae caaaec caaaeca caaaecaae caac caaca caacaae
+caaeca caaecaa caaecaaae caca cacaa cacaaae
+
+Data set 7:
+16 words.
+ac aca acae ace aec aeca aecae aece c ca
+cae ce ec eca ecae ece
+
+Data set 8:
+207360 words.
+abacadafagah abacadafagaha abacadafagahe abacadafageh abacadafageha abacadafagehe abacadafahag abacadafahaga abacadafahage abacadafaheg
+abacadafahega abacadafahege abacadafegah abacadafegaha abacadafegahe abacadafegeh abacadafegeha abacadafegehe abacadafehag abacadafehaga
+abacadafehage abacadafeheg abacadafehega abacadafehege abacadagafah abacadagafaha abacadagafahe abacadagafeh abacadagafeha abacadagafehe
+abacadagahaf abacadagahafa abacadagahafe abacadagahef abacadagahefa abacadagahefe abacadagefah abacadagefaha abacadagefahe abacadagefeh
+abacadagefeha abacadagefehe abacadagehaf abacadagehafa abacadagehafe abacadagehef abacadagehefa abacadagehefe abacadahafag abacadahafaga
+abacadahafage abacadahafeg abacadahafega abacadahafege abacadahagaf abacadahagafa abacadahagafe abacadahagef abacadahagefa abacadahagefe
+abacadahefag abacadahefaga abacadahefage abacadahefeg abacadahefega abacadahefege abacadahegaf abacadahegafa abacadahegafe abacadahegef
+abacadahegefa abacadahegefe abacadefagah abacadefagaha abacadefagahe abacadefageh abacadefageha abacadefagehe abacadefahag abacadefahaga
+abacadefahage abacadefaheg abacadefahega abacadefahege abacadefegah abacadefegaha abacadefegahe abacadefegeh abacadefegeha abacadefegehe
+abacadefehag abacadefehaga abacadefehage abacadefeheg abacadefehega abacadefehege abacadegafah abacadegafaha abacadegafahe abacadegafeh
+
+Data set 9:
+36 words.
+abac abaca abacae abaec abaeca abaecae acab acaba acabae acaeb
+acaeba acaebae aebac aebaca aebacae aebaec aebaeca aebaecae aecab aecaba
+aecabae aecaeb aecaeba aecaebae bac baca bacae baec baeca baecae
+cab caba cabae caeb caeba caebae
