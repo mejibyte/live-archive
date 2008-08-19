@@ -1,5 +1,5 @@
 /*
-  Wrong answer, por error de precisión de double.
+  Accepted.
  */
 #include <iostream>
 #include <set>
@@ -39,7 +39,7 @@ int main(){
     sort(v.begin(), v.end());
     int ans = 1, start = 0, end = 1;
     while (end < n){
-      if (v[end] > r*v[start]){
+      if (v[end] - 1e-9 > r*v[start]){
         ans++;
         start = end;
       }
