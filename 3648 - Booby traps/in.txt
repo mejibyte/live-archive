@@ -1,0 +1,40 @@
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+8 8
+x x x x o x x x
+x o o C o o o x
+x A x x x x D x
+x o o o o o o x
+x x x o x x x x
+x o o B o o o x
+x A x x x B x x
+o o o o o o o o
+4 0
+4 7
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+8 8
+x x x x o x x x
+x o o C o o o x
+x A x x x x D x
+x o o o o o o x
+x x x o x x x x
+x o o B o o o x
+x A x x x B x x
+o o o o o o o o
+4 0
+4 7
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+4 4
+o A B o
+o A B o
+o A o o
+o A B o
+0 0
+3 3
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+4 4
+o A B o
+o A B o
+o A B o
+o A B o
+0 0
+3 3
