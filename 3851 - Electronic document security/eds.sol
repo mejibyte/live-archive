@@ -1,0 +1,13 @@
+1:CSc
+2:AeBerMeYder
+3:
+4:BHJfwLPaw
+5:
+6:Bc
+7:Cd
+8:AEhostFxIhostKastNxOhostSastUhost
+9:
+10:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+11:Eabcdefghijklmnopqrstuvwxyz
+12:
+13:AhijBcdeCbcdDijEefGijHabcIbcdJefgKbcdLhijMefgNcdeOijPefgQbcdRcdefghTabcUefgVfghWcdeYZhij
