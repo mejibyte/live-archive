@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<title>Problem A: Tire Dimensions</title>
+</head>
+
+<body>
+
+<h1>Problem A: Tire Dimensions</h1>
+
+<p><b>Input</b>: <tt>tire.in</tt><br>
+<b>Output</b>: <tt>tire.out</tt>
+</p>
+
+<p>Given the tire descriptor typically found on the sidewall of
+a passenger or light truck tire, you will calculate the tire's overall
+circumference.  Each line of the sample input contains an example of a tire
+descriptor.  The following diagram illustrates some of the terminology: 
+</p>
+
+<p><img src="definitions.gif"></p>
+
+<p>The tire descriptor contains the following items of
+information:</p>
+
+<ol>
+<li>
+One or two upper case letters to specify the type of tire. For
+our purposes, the tire types are "P" (passenger), "LT" (light truck), and 
+"T" (temporary spare tire).</li>
+
+<li>
+The <i>section width</i> (of an inflated tire) in millimeters.
+This number is followed by a slash.</li>
+
+<li>The ratio of the section height to the section width, expressed as
+a percentage. For example, the ratio 75 means that the section height
+of an inflated tire is 75% of its section width.</li>
+
+<li>
+Information about the <i>construction</i> of the tire (one
+upper-case letter), optionally preceded by the <i>speed symbol</i> (also one
+upper-case letter). In the first, second, and fourth lines of the sample
+output, the tire construction is specified by "R", which means "radial". In the
+third line, it is "D", which means "diagonal". In the second line, "R" is
+preceded by the optional speed symbol "H".</li>
+
+<li>
+The nominal rim diameter in inches. It is called "nominal"
+because it does not include the rim's flanges.</li>
+</ol>
+
+<p>The <i>overall circumference</i> (the goal of your calculations) is
+based on the <i>overall diameter</i>, which is the diameter of an
+inflated tire at the outermost surface of the tread.</p>
+
+<h2>Input</h2>
+
+<p>The input will consist of one or more lines, terminated by end-of-file. Each
+line of the input will contain one tire descriptor, as discussed in the
+preceding paragraphs. All numerical quantities will be positive integers.
+Exactly one blank space will separate consecutive items (including the slash)
+on the input line. </p>
+
+<h2>Output</h2>
+
+<p>For each line of input, the program will produce exactly one line
+of output, consisting of: the input line, followed by a colon, one
+blank space, and the overall circumference, expressed in centimeters,
+rounded to the nearest integer. Note that 1 centimeter equals 10
+millimeters, and 1 inch equals 2.54 centimeters.</p>
+
+<h2>Sample input</h2>
+
+<pre>
+P 195 / 75 R 14
+P 205 / 60 H R 15
+T 115 / 70 D 15
+LT 245 / 75 R 16
+</pre>
+
+<h2>Output for sample input</h2>
+
+<pre>
+P 195 / 75 R 14: 204
+P 205 / 60 H R 15: 197
+T 115 / 70 D 15: 170
+LT 245 / 75 R 16: 243
+</pre>
+
+
+</body>
+
+</html>

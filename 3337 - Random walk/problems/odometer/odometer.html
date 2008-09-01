@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<title>Problem G: Faulty Odometer</title>
+</head>
+
+<body>
+
+<h1>Problem G: Faulty Odometer</h1>
+
+<p><b>Input</b>: <tt>odometer.in</tt><br>
+<b>Output</b>: <tt>odometer.out</tt></p>
+
+<p>You are given a car odometer which displays the miles
+traveled as an integer. The odometer has a defect, however: it proceeds from
+the digit 3 to the digit 5, always skipping over the digit 4. This defect shows
+up in all positions (the one's, the ten's, the hundred's, etc.). For example, if
+the odometer displays 15339 and the car travels one mile, odometer reading
+changes to 15350 (instead of 15340).</p>
+
+<h2>Input</h2>
+
+<p>Each line of input contains a positive integer in the range
+1..999999999 which represents an odometer reading.  (Leading zeros
+will not appear in the input.)  The end of input is indicated by a
+line containing a single 0.  You may assume that no odometer reading
+will contain the digit 4.</p>
+
+<h2>Output</h2>
+
+<p>Each line of input will produce exactly one line of output,
+which will contain: the odometer reading from the input, a colon, one blank
+space, and the actual number of miles traveled by the car. 
+</p>
+
+<h2>Sample input</h2>
+
+<pre>
+13
+15
+2003
+2005
+239
+250
+1399
+1500
+999999
+0
+</pre>
+
+<h2>Output for sample input</h2>
+
+<pre>
+13: 12
+15: 13
+2003: 1461
+2005: 1462
+239: 197
+250: 198
+1399: 1052
+1500: 1053
+999999: 531440
+</pre>
+</body>
+
+</html>

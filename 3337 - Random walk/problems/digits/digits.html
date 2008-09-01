@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Problem H: Last Digits</title>
+</head>
+
+<body>
+<h1>Problem H: Last Digits</h1>
+
+<p><b>Input</b>: <tt>digits.in</tt><br>
+<b>Output</b>: <tt>digits.out</tt></p>
+
+<p>
+Exponentiation of one integer by another often produces very large results.
+In this problem, we will compute a function based on repeated exponentiation,
+but output only the last <em>n</em> digits of the result.
+Doing this efficiently requires careful
+thought about how to avoid computing the full answer.
+
+</p>
+
+<p>
+Given integers <em>b</em>, <em>n</em>, and <em>i</em>, we define the function
+f(x) recursively by f(x) = b<sup>f(x-1)</sup> if x &gt; 0,
+and f(0)=1.  Your job is to efficiently compute the last <em>n</em>
+decimal digits of f(<em>i</em>).
+</p>
+
+<h2>Input</h2>
+
+<p>
+The input consists of a number of test cases.  Each test case starts
+with the integer <em>b</em> (1 &lt;= <em>b</em> &lt;= 100) called the
+<b>base</b>.  On the next line is the integer
+<em>i</em> (1 &lt;= <em>i</em> &lt;= 100) called the <b>iteration count</b>.
+And finally, the last line contains the number 
+<em>n</em> (1 &lt;= <em>n</em> &lt;= 7),
+which is the number of decimal digits to output.
+The input is terminated when <em>b</em> = 0.
+</p>
+
+<h2>Output</h2>
+
+<p>
+For each test case, print on one line the last <em>n</em> digits of 
+f(<em>i</em>) for the base <em>b</em> specified.  If the result has fewer
+than <em>n</em> digits, pad the result with zeroes on the left so that
+there are exactly <em>n</em> digits.
+</p>
+
+<h2>Sample input</h2>
+<pre>
+2
+4
+7
+10
+10
+6
+3
+10
+7
+0
+</pre>
+
+
+<h2>Output for sample input</h2>
+<pre>
+0065536
+000000
+4195387
+</pre>
+
+
+</body>
+</html>

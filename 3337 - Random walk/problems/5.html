@@ -1,0 +1,43 @@
+<html>
+<head><title>general clarification#5</title></head>
+<body>
+<h2>general clarification#5</h2>
+<p>The floating point math functions from math.h have
+ambiguous bindings when passed int values.
+
+<p>Use double precision values for these functions.
+
+<p>For example,
+
+<pre>
+   int x;
+   ...
+   ans=sqrt(x)
+</pre>
+
+will cause a compile time error because sqrt may be cast to a float or double argument type.
+
+Pass double values and you should be fine:
+
+<pre>
+   int x;
+   ...
+
+   double xtmp=x;
+   ans=sqrt(x);
+</pre>
+or 
+<pre>
+   ans=sqrt((double)x)
+</pre>
+
+<p>This has been seen with
+<pre>
+sqrt
+atan
+pow
+</pre>
+but you should assume they problem exists with all math functions.
+
+</body>
+</html>

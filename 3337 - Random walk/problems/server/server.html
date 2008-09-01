@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Problem Q: Server</title>
+</head>
+
+<body>
+
+<h1>Problem Q: Server</h1>
+
+<p><b>Input</b>: <tt>server.in</tt><br>
+<b>Output</b>: <tt>server.out</tt></p>
+
+<p>Users of computers frequently enter URLs (Uniform Resource Locators) in the
+form</p>
+
+<pre>
+    protocol://server.network
+</pre>
+
+<p>For example, in the URL</p>
+
+<pre>
+    http://www.monkey.donkey.zebra.com
+</pre>
+
+<p>the protocol is "http", the server is "www", and the network is
+"monkey.donkey.zebra.com".  For purposes of this problem, the protocol
+and server are alphanumeric strings, whereas the network is an
+alphanumeric string that may also contain periods (however, the URL
+cannot end with a period or contain two consecutive
+periods).</p>
+
+<h2>Input</h2>
+
+<p>Each line of the input contains a URL in the format specified
+above.  No line will be longer than 80 characters.  The input is
+terminated by end-of-file.</p>
+
+<h2>Output</h2>
+
+<p>Each line of input will give rise to one line of output, consisting of the
+word "server", followed by a colon and one blank space, and the server from the
+corresponding line of input.</p>
+
+<h2>Sample input</h2>
+
+<pre>
+http://www.monkey.donkey.zebra.com
+ftp://newton.cs.colorado.edu
+</pre>
+
+<h2>Output for sample input</h2>
+
+<pre>
+server: www
+server: newton
+</pre>
+
+</body>
+
+</html>

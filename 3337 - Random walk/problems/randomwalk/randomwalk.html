@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Problem B: Random Walk</title>
+</head>
+
+<body>
+
+<h1>Problem B: Random Walk</h1>
+
+<p><b>Input</b>: <tt>randomwalk.in</tt><br>
+   <b>Output</b>: <tt>randomwalk.out</tt><p>
+
+<p>
+Random walks are used to model a wide range of phenomena, from
+Brownian motion to gambling.  For example, a gambler who bets on heads
+or tails on a coin toss wins or loses his bet each turn.  The amount
+of money the gambler has throughout the game is a random walk.
+Although the bets in each turn may be different, it is easy to see
+that the gambler wins the maximum amount of money if he
+wins every turn.  Similarly, he loses the maximum amount if he loses
+every turn.
+</p>
+
+<p>
+We consider the following two-dimensional variation of the random
+walk.  We are given <em>n</em> two-dimensional nonzero vectors
+<em>v<sub>i</sub> = (x<sub>i</sub>, y<sub>i</sub>)</em>, no two of
+which are parallel.  In step <em>i</em>, a coin is flipped.  If it is
+heads, we move <em>x<sub>i</sub></em> meters in the <em>x</em>
+direction and <em>y<sub>i</sub></em> meters in the <em>y</em>
+direction.  If it is tails, we move <em>-x<sub>i</sub></em> and
+<em>-y<sub>i</sub></em> meters in the <em>x</em> and <em>y</em>
+directions.
+</p>
+
+<p>
+We are interested in computing the maximum distance we can be away
+from our starting point.  This is easy in one-dimension, but it is
+not so easy in the two-dimensional version.
+</p>
+
+<h2>Input</h2>
+
+<p>
+The input consists of a number of test cases.  Each test case starts
+with a line containing the integer <em>n</em>, which is at most 100.
+Each of the next <em>n</em> lines gives a pair of integers
+<em>x<sub>i</sub></em> and <em>y<sub>i</sub></em> specifying
+<em>v<sub>i</sub></em>.  The coordinates are less than 1000 in
+magnitude.  The end of input is specified by <em>n</em> = 0.
+</p>
+
+<h2>Output</h2>
+
+<p>
+For each test case, print on a line the maximum distance we can be
+away from the starting point, in the format shown below.  Output the
+answer to 3 decimal places.
+</p>
+
+<h2>Sample input</h2>
+<pre>
+3
+1 1
+0 1
+-1 1
+2
+4 0
+1 1
+7
+1 3
+-2 -7
+7 8
+-2 9
+-7 -3
+4 -3
+-2 -2
+0
+</pre>
+
+
+<h2>Output for sample input</h2>
+<pre>
+Maximum distance = 3.000 meters.
+Maximum distance = 5.099 meters.
+Maximum distance = 37.336 meters.
+</pre>
+
+</body>
+</html>

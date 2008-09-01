@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>Problem E: Hour Glass</title>
+</head>
+
+<body>
+
+<h1>Problem E: Hour Glass</h1>
+
+<p><b>Input</b>: <tt>hourglass.in</tt><br>
+   <b>Output</b>: <tt>hourglass.out</tt></p>
+
+<p>You are given two hour glasses. They measure <em>M</em> and
+<em>N</em> minutes respectively. You wish to use these two hour
+glasses to measure a target period of <em>T</em> minutes. Each hour
+glass consists of two glass bowls connected by a narrow section (the
+"narrows") where sand can flow from one bowl into the other.  If all
+of the sand is in the lower bowl and the hour glass is turned upside
+down ("flipped"), the sand will flow into the other bowl (which is now
+the lower bowl) in <em>M</em> or <em>N</em> minutes,
+respectively. </p>
+
+<p>Initially (at time = 0), all of the sand is in the lower bowl in
+each of the hour glasses, and both hour glasses are flipped.
+Subsequently, one can flip one or both of the hour glasses
+according to the following rules.</p> 
+
+<ol>
+<li> When only one of the hour glasses expires at a particular
+  instant, one has four choices of action:</li> 
+  <ol> 
+  <li>flip the hour glass that expired;</li> 
+  <li>flip the hour glass that did not expire;</li> 
+  <li>flip both hour glasses;</li> 
+  <li>do not flip either one, just let one hour glass sit idle until the 
+      other one expires.</li> 
+  </ol>
+<li> When both of the hour glasses happen to expire
+  simultaneously, or if one hour glass has been sitting idle and the
+  other one has just expired, one must flip at least one of the hour
+  glasses.</li>
+<li> Any hour glass may be flipped only at an instant when
+  either the same hour glass, or the other one, or both have just
+  expired.</li>
+</ol>
+
+<p>A particular time <em>T</em> can be measured if there is a sequence
+of hour glass flips such that one (or both) of the hour glasses
+expires at time <em>T</em> during the sequence.  You may assume that
+flipping an hour glass is instantaneous and does not take any time.
+</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a number of lines, each representing one
+instance of the problem.  Each line contains three positive integers
+which represent the values of <em>M</em>, <em>N</em>, and <em>T</em>.
+You may assume that 2 &lt;= <em>M</em> &lt; <em>N</em> &lt;= 200 and
+<em>M &lt;= T &lt;= 2000</em>.  The input is terminated by a line
+containing three zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each instance of the problem, print the shortest sequence of
+flips which measures the target time <em>T</em>.  For each flip, print
+on a single line the time, followed by a colon and a space, followed
+by the capacities of the hour glasses to be flipped (separated by a
+comma if both are flipped).  The sequence of flips should be printed
+in chronological order.  If there are multiple shortest sequences, any
+one is acceptable.  If it is impossible to measure the target time
+<em>T</em>, print <tt>Impossible!</tt> on a single line.  The output
+for each instance of the problem should be followed by a line
+consisting of ten hyphens.</p>
+
+<h2>Sample input</h2>
+
+<pre>
+4 17 21
+4 17 22
+8 13 23
+0 0 0
+</pre>
+
+<h2>Output for sample input</h2>
+
+<pre>
+0: 4,17
+17: 4,17
+----------
+0: 4,17
+4: 4
+8: 4
+12: 4
+16: 4
+17: 4
+18: 4,17
+----------
+0: 8,13
+8: 8
+13: 8,13
+18: 8,13
+----------
+</pre>
+
+</body>
+
+</html>
