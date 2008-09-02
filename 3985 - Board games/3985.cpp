@@ -52,7 +52,6 @@ int main(){
     scanf("%d %d %d", &n, &ini, &fin);
     scanf("%d", &m);
     e = new edge[m];
-    assert(m <= 100000);
     for(int i =0; i<m; ++i) {
       scanf("%d %d %d", &e[i].u, &e[i].v, &e[i].w);
     }
