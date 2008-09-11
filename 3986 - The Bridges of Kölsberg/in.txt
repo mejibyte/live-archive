@@ -1,0 +1,43 @@
+4
+3
+mordor Vista 1000000
+xanadu Mac 1000
+shangrila OS2 400
+4
+atlantis Mac 5000
+hell Vista 1200
+rivendell OS2 100
+appleTree Mac 50
+
+4
+a os2 10
+b win 2
+c lin 1
+d win 8
+4
+e win 3
+f lin 7
+g os2 5
+h win 10
+
+4
+a os2 10
+b win 2
+c lin 3
+d win 8
+4
+e win 3
+f lin 7
+g os2 5
+h win 10
+
+4
+a os2 10
+b win 2
+c lin 3
+d win 8
+4
+e win 3
+f lin 7
+g os2 4
+h win 10
