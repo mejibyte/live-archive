@@ -55,23 +55,26 @@ int dp[MAXN+1][MAXN+1], b[MAXN+1][MAXN+1];
 
 int w_north[MAXN+1], w_south[MAXN+1];
 int id_north[MAXN+1], id_south[MAXN+1];
+char buffer[32];
 
 int main(){
   int cases;
-  cin >> cases;
+  scanf("%d", &cases);
   while (cases--){
     int n, s, currentID = 1;
     map<string, int> id;
     string os;
-    cin >> n;
+    scanf("%d", &n);
     for (int i=1; i<=n; ++i){
-      cin >> os >> os >> w_north[i];
+      scanf("%11s %11s %d", buffer, buffer, &w_north[i]);
+      os = string(buffer);
       if (id[os] > 0) id_north[i] = id[os];
       else id_north[i] = id[os] = currentID++;
     }
     cin >> s;
     for (int j=1; j<=s; ++j){
-      cin >> os >> os >> w_south[j];
+      scanf("%11s %11s %d", buffer, buffer, &w_south[j]);
+      os = string(buffer);
       if (id[os] > 0) id_south[j] = id[os];
       else id_south[j] = id[os] = currentID++;
     }
@@ -103,7 +106,7 @@ int main(){
 
       }
     }
-    cout << dp[n][s] << " " << b[n][s] << endl;
+    printf("%d %d\n", dp[n][s], b[n][s]);
 
   }
   return 0;
