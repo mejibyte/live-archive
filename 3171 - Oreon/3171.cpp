@@ -1,5 +1,6 @@
 /*
   Problem: 3171 - Oreon
+  Algorithm: Minimum spanning tree; Kruskal's algorithm
   Author: Andrés Mejía-Posada
  */
 

@@ -1,5 +1,6 @@
 /*
   Problem: 3169 - Boundary points
+  Algorithm: Convex hull; Andrew's monotone chain.
   Author: Andrés Mejía-Posada
  */
 

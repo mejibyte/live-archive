@@ -1,5 +1,6 @@
 /*
   Problem: 3170 - AGTC
+  Algorithm: Levenshtein algorithm
   Author: Andrés Mejía-Posada
  */
 

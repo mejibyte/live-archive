@@ -1,5 +1,6 @@
 /*
   Problem: 3173 - Wordfish
+  Algorithm: Ad-hoc
   Author: Andrés Mejía-Posada
  */
 
