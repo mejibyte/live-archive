@@ -1,5 +1,5 @@
 /*
-  Wrong answer
+  Accepted
  */
 using namespace std;
 #include <algorithm>
@@ -28,27 +28,34 @@ int main(){
   for (scanf("%d", &cases); cases--; ){
     int n;
     scanf("%d", &n);
-    string small = "", big = "";
+    string small, big, s[18];
 
+    s[2] = "1";
+    s[3] = "7";
+    s[4] = "4";
+    s[5] = "2";
+    s[6] = "6";
+    s[7] = "8";
+    s[8] = "10";
+    s[9] = "18";
+    s[10] = "22";
+    s[11] = "20";
+    s[12] = "28";
+    s[13] = "68";
+    s[14] = "88";
+    s[15] = "108";
+    s[16] = "188";
+    s[17] = "200";
+
+    small = "";
     int x = n;
-    while (x > 3){
-      big += "1";
-      x -= 2;
-    }
-    if (x == 2) big += "1";
-    else big = "7" + big;
+    while (x > 17) small += "8", x -= 7;
+    small = s[x] + small;
 
+    big = "";
     x = n;
-    char m[] = {-1, -1, '1', '7', '4', '2', '6'};
-    while (x >= 7){
-      small += "8";
-      x -= 7;
-    }
-    if (x > 1) small = m[x] + small;
-    else if (x == 1){
-      small.erase(small.begin());
-      small = "10" + small;
-    }
+    while (x > 3) big += "1", x -= 2;
+    big = s[x] + big;
 
     printf("%s %s\n", small.c_str(), big.c_str());
   }
