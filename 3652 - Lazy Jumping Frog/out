@@ -1,0 +1,705 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 65.25      2.10     2.10       45    46.69    67.59  dijkstra(int const&, int const&, int const&, int const&)
+  5.28      2.27     0.17                             main
+  5.13      2.44     0.17  8324423     0.00     0.00  dequeue(int*, int*, int*)
+  3.26      2.54     0.11  8326929     0.00     0.00  enqueue(int, int, int)
+  2.49      2.62     0.08  8324542     0.00     0.00  std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&)
+  2.17      2.69     0.07  8326929     0.00     0.00  __gnu_cxx::new_allocator<state>::construct(state*, state const&)
+  2.02      2.76     0.07  8326915     0.00     0.00  std::deque<state, std::allocator<state> >::pop_front()
+  1.86      2.82     0.06  9176611     0.00     0.00  bool std::operator==<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  1.86      2.88     0.06  9176581     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::empty() const
+  1.71      2.93     0.06  8326929     0.00     0.00  std::deque<state, std::allocator<state> >::push_back(state const&)
+  1.55      2.98     0.05  9176581     0.00     0.00  std::deque<state, std::allocator<state> >::empty() const
+  1.55      3.03     0.05  8324414     0.00     0.00  std::deque<state, std::allocator<state> >::front()
+  1.40      3.08     0.05  8326929     0.00     0.00  state::state(int, int, int)
+  1.09      3.11     0.04   813167     0.00     0.00  std::__deque_buf_size(unsigned int)
+  0.62      3.13     0.02  8324414     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::front()
+  0.47      3.15     0.02  8326929     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::push(state const&)
+  0.31      3.16     0.01  8326915     0.00     0.00  __gnu_cxx::new_allocator<state>::destroy(state*)
+  0.31      3.17     0.01  8326915     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::pop()
+  0.31      3.18     0.01  8324428     0.00     0.00  std::_Deque_iterator<state, state&, state*>::operator*() const
+  0.31      3.19     0.01  8324414     0.00     0.00  std::deque<state, std::allocator<state> >::begin()
+  0.31      3.20     0.01   198273     0.00     0.00  __gnu_cxx::new_allocator<state>::deallocate(state*, unsigned int)
+  0.31      3.21     0.01   198257     0.00     0.00  std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&)
+  0.16      3.21     0.01   198257     0.00     0.00  std::deque<state, std::allocator<state> >::_M_pop_front_aux()
+  0.16      3.22     0.01                             __tcf_0
+  0.16      3.22     0.01                             frame_dummy
+  0.00      3.22     0.00  8326929     0.00     0.00  state::~state()
+  0.00      3.22     0.00  8326929     0.00     0.00  operator new(unsigned int, void*)
+  0.00      3.22     0.00   416589     0.00     0.00  std::_Deque_iterator<state, state&, state*>::_S_buffer_size()
+  0.00      3.22     0.00   413720     0.00     0.00  std::_Deque_iterator<state, state&, state*>::_M_set_node(state**)
+  0.00      3.22     0.00   198273     0.00     0.00  __gnu_cxx::new_allocator<state>::allocate(unsigned int, void const*)
+  0.00      3.22     0.00   198273     0.00     0.00  __gnu_cxx::new_allocator<state>::max_size() const
+  0.00      3.22     0.00   198273     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_allocate_node()
+  0.00      3.22     0.00   198273     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*)
+  0.00      3.22     0.00   198257     0.00     0.00  std::deque<state, std::allocator<state> >::_M_reserve_map_at_back(unsigned int)
+  0.00      3.22     0.00     8587     0.00     0.00  state** std::__copy_normal<false, false>::copy_n<state**, state**>(state**, state**, state**)
+  0.00      3.22     0.00     8587     0.00     0.00  std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool)
+  0.00      3.22     0.00     8587     0.00     0.00  state** std::__copy<true, std::random_access_iterator_tag>::copy<state*>(state* const*, state* const*, state**)
+  0.00      3.22     0.00     8587     0.00     0.00  state** std::__copy_aux<state**, state**>(state**, state**, state**)
+  0.00      3.22     0.00     8587     0.00     0.00  state** std::copy<state**, state**>(state**, state**, state**)
+  0.00      3.22     0.00     2869     0.00     0.00  std::deque<state, std::allocator<state> >::size() const
+  0.00      3.22     0.00     2869     0.00     0.00  std::_Deque_iterator<state, state&, state*>::difference_type std::operator-<state, state&, state*, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  0.00      3.22     0.00     2861     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::size() const
+  0.00      3.22     0.00       88     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() const
+  0.00      3.22     0.00       80     0.00     0.00  __gnu_cxx::new_allocator<state*>::new_allocator()
+  0.00      3.22     0.00       80     0.00     0.00  __gnu_cxx::new_allocator<state*>::~new_allocator()
+  0.00      3.22     0.00       80     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const
+  0.00      3.22     0.00       80     0.00     0.00  std::allocator<state*>::allocator<state>(std::allocator<state> const&)
+  0.00      3.22     0.00       80     0.00     0.00  std::allocator<state*>::~allocator()
+  0.00      3.22     0.00       56     0.00     0.00  __gnu_cxx::new_allocator<state>::~new_allocator()
+  0.00      3.22     0.00       48     0.00     0.00  __gnu_cxx::new_allocator<state>::new_allocator(__gnu_cxx::new_allocator<state> const&)
+  0.00      3.22     0.00       40     0.00     0.00  __gnu_cxx::new_allocator<state*>::deallocate(state**, unsigned int)
+  0.00      3.22     0.00       40     0.00     0.00  __gnu_cxx::new_allocator<state*>::allocate(unsigned int, void const*)
+  0.00      3.22     0.00       40     0.00     0.00  __gnu_cxx::new_allocator<state*>::max_size() const
+  0.00      3.22     0.00       40     0.00     0.00  std::allocator<state>::~allocator()
+  0.00      3.22     0.00       40     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int)
+  0.00      3.22     0.00       40     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int)
+  0.00      3.22     0.00       40     0.00     0.00  unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  0.00      3.22     0.00       32     0.00     0.00  std::allocator<state>::allocator(std::allocator<state> const&)
+  0.00      3.22     0.00       32     0.00     0.00  std::_Deque_iterator<state, state&, state*>::_Deque_iterator()
+  0.00      3.22     0.00       30     0.00     0.00  bool std::operator!=<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  0.00      3.22     0.00       24     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator()
+  0.00      3.22     0.00       16     0.00     0.00  std::allocator<state>::allocator(std::allocator<state> const&)
+  0.00      3.22     0.00       16     0.00     0.00  std::allocator<state>::~allocator()
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&)
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_Deque_impl::~_Deque_impl()
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_create_nodes(state**, state**)
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_destroy_nodes(state**, state**)
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int)
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int)
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::~_Deque_base()
+  0.00      3.22     0.00       16     0.00     0.00  std::_Deque_iterator<state, state const&, state const*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&)
+  0.00      3.22     0.00       16     0.00     0.00  std::deque<state, std::allocator<state> >::~deque()
+  0.00      3.22     0.00       16     0.00     0.00  void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type)
+  0.00      3.22     0.00       16     0.00     0.00  void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>)
+  0.00      3.22     0.00       16     0.00     0.00  void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>)
+  0.00      3.22     0.00       14     0.00     0.00  std::_Deque_iterator<state, state&, state*>::operator++()
+  0.00      3.22     0.00       14     0.00     0.00  void std::_Destroy<state>(state*)
+  0.00      3.22     0.00        8     0.00     0.00  __gnu_cxx::new_allocator<state>::new_allocator()
+  0.00      3.22     0.00        8     0.00     0.00  std::_Deque_base<state, std::allocator<state> >::get_allocator() const
+  0.00      3.22     0.00        8     0.00     0.00  std::deque<state, std::allocator<state> >::get_allocator() const
+  0.00      3.22     0.00        8     0.00     0.00  std::deque<state, std::allocator<state> >::end() const
+  0.00      3.22     0.00        8     0.00     0.00  std::deque<state, std::allocator<state> >::begin() const
+  0.00      3.22     0.00        8     0.00     0.00  std::allocator<state>::allocator()
+  0.00      3.22     0.00        8     0.00     0.00  std::deque<state, std::allocator<state> >::deque(std::allocator<state> const&)
+  0.00      3.22     0.00        8     0.00     0.00  std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&)
+  0.00      3.22     0.00        8     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::queue(std::deque<state, std::allocator<state> > const&)
+  0.00      3.22     0.00        8     0.00     0.00  std::queue<state, std::deque<state, std::allocator<state> > >::~queue()
+  0.00      3.22     0.00        8     0.00     0.00  std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>)
+  0.00      3.22     0.00        8     0.00     0.00  std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>)
+  0.00      3.22     0.00        8     0.00     0.00  std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type)
+  0.00      3.22     0.00        8     0.00     0.00  bool std::operator==<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&)
+  0.00      3.22     0.00        8     0.00     0.00  bool std::operator!=<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&)
+  0.00      3.22     0.00        1     0.00     0.01  global constructors keyed to X
+  0.00      3.22     0.00        1     0.00     0.01  __static_initialization_and_destruction_0(int, int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.31% of 3.22 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.7    0.17    3.04                 main [1]
+                2.10    0.94      45/45          dijkstra(int const&, int const&, int const&, int const&) [2]
+-----------------------------------------------
+                2.10    0.94      45/45          main [1]
+[2]     94.4    2.10    0.94      45         dijkstra(int const&, int const&, int const&, int const&) [2]
+                0.17    0.46 8324423/8324423     dequeue(int*, int*, int*) [3]
+                0.11    0.21 8326929/8326929     enqueue(int, int, int) [4]
+                0.00    0.00    2861/2861        std::queue<state, std::deque<state, std::allocator<state> > >::size() const [34]
+                0.00    0.00    2501/8326915     std::queue<state, std::deque<state, std::allocator<state> > >::pop() [10]
+-----------------------------------------------
+                0.17    0.46 8324423/8324423     dijkstra(int const&, int const&, int const&, int const&) [2]
+[3]     19.3    0.17    0.46 8324423         dequeue(int*, int*, int*) [3]
+                0.06    0.11 9176581/9176581     std::queue<state, std::deque<state, std::allocator<state> > >::empty() const [5]
+                0.02    0.15 8324414/8324414     std::queue<state, std::deque<state, std::allocator<state> > >::front() [6]
+                0.01    0.11 8324414/8326915     std::queue<state, std::deque<state, std::allocator<state> > >::pop() [10]
+-----------------------------------------------
+                0.11    0.21 8326929/8326929     dijkstra(int const&, int const&, int const&, int const&) [2]
+[4]      9.9    0.11    0.21 8326929         enqueue(int, int, int) [4]
+                0.02    0.15 8326929/8326929     std::queue<state, std::deque<state, std::allocator<state> > >::push(state const&) [7]
+                0.05    0.00 8326929/8326929     state::state(int, int, int) [17]
+-----------------------------------------------
+                0.06    0.11 9176581/9176581     dequeue(int*, int*, int*) [3]
+[5]      5.3    0.06    0.11 9176581         std::queue<state, std::deque<state, std::allocator<state> > >::empty() const [5]
+                0.05    0.06 9176581/9176581     std::deque<state, std::allocator<state> >::empty() const [11]
+-----------------------------------------------
+                0.02    0.15 8324414/8324414     dequeue(int*, int*, int*) [3]
+[6]      5.3    0.02    0.15 8324414         std::queue<state, std::deque<state, std::allocator<state> > >::front() [6]
+                0.05    0.10 8324414/8324414     std::deque<state, std::allocator<state> >::front() [9]
+-----------------------------------------------
+                0.02    0.15 8326929/8326929     enqueue(int, int, int) [4]
+[7]      5.2    0.02    0.15 8326929         std::queue<state, std::deque<state, std::allocator<state> > >::push(state const&) [7]
+                0.06    0.10 8326929/8326929     std::deque<state, std::allocator<state> >::push_back(state const&) [8]
+-----------------------------------------------
+                0.06    0.10 8326929/8326929     std::queue<state, std::deque<state, std::allocator<state> > >::push(state const&) [7]
+[8]      4.7    0.06    0.10 8326929         std::deque<state, std::allocator<state> >::push_back(state const&) [8]
+                0.07    0.00 8128672/8326929     __gnu_cxx::new_allocator<state>::construct(state*, state const&) [15]
+                0.01    0.02  198257/198257      std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+-----------------------------------------------
+                0.05    0.10 8324414/8324414     std::queue<state, std::deque<state, std::allocator<state> > >::front() [6]
+[9]      4.7    0.05    0.10 8324414         std::deque<state, std::allocator<state> >::front() [9]
+                0.01    0.08 8324414/8324414     std::deque<state, std::allocator<state> >::begin() [13]
+                0.01    0.00 8324414/8324428     std::_Deque_iterator<state, state&, state*>::operator*() const [25]
+-----------------------------------------------
+                0.00    0.00    2501/8326915     dijkstra(int const&, int const&, int const&, int const&) [2]
+                0.01    0.11 8324414/8326915     dequeue(int*, int*, int*) [3]
+[10]     3.6    0.01    0.11 8326915         std::queue<state, std::deque<state, std::allocator<state> > >::pop() [10]
+                0.07    0.04 8326915/8326915     std::deque<state, std::allocator<state> >::pop_front() [12]
+-----------------------------------------------
+                0.05    0.06 9176581/9176581     std::queue<state, std::deque<state, std::allocator<state> > >::empty() const [5]
+[11]     3.4    0.05    0.06 9176581         std::deque<state, std::allocator<state> >::empty() const [11]
+                0.06    0.00 9176581/9176611     bool std::operator==<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [16]
+-----------------------------------------------
+                0.07    0.04 8326915/8326915     std::queue<state, std::deque<state, std::allocator<state> > >::pop() [10]
+[12]     3.3    0.07    0.04 8326915         std::deque<state, std::allocator<state> >::pop_front() [12]
+                0.01    0.03  198257/198257      std::deque<state, std::allocator<state> >::_M_pop_front_aux() [19]
+                0.01    0.00 8128658/8326915     __gnu_cxx::new_allocator<state>::destroy(state*) [24]
+-----------------------------------------------
+                0.01    0.08 8324414/8324414     std::deque<state, std::allocator<state> >::front() [9]
+[13]     2.8    0.01    0.08 8324414         std::deque<state, std::allocator<state> >::begin() [13]
+                0.08    0.00 8324414/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+-----------------------------------------------
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type) [54]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>) [53]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [50]
+                0.00    0.00       8/8324542     std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00      32/8324542     void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>) [49]
+                0.00    0.00      32/8324542     void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [47]
+                0.00    0.00      32/8324542     std::deque<state, std::allocator<state> >::~deque() [40]
+                0.08    0.00 8324414/8324542     std::deque<state, std::allocator<state> >::begin() [13]
+[14]     2.5    0.08    0.00 8324542         std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+-----------------------------------------------
+                0.00    0.00  198257/8326929     std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+                0.07    0.00 8128672/8326929     std::deque<state, std::allocator<state> >::push_back(state const&) [8]
+[15]     2.2    0.07    0.00 8326929         __gnu_cxx::new_allocator<state>::construct(state*, state const&) [15]
+                0.00    0.00 8326929/8326929     operator new(unsigned int, void*) [60]
+-----------------------------------------------
+                0.00    0.00      30/9176611     bool std::operator!=<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [52]
+                0.06    0.00 9176581/9176611     std::deque<state, std::allocator<state> >::empty() const [11]
+[16]     1.9    0.06    0.00 9176611         bool std::operator==<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [16]
+-----------------------------------------------
+                0.05    0.00 8326929/8326929     enqueue(int, int, int) [4]
+[17]     1.4    0.05    0.00 8326929         state::state(int, int, int) [17]
+-----------------------------------------------
+                0.00    0.00      32/813167      std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.01    0.00  198273/813167      std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [27]
+                0.01    0.00  198273/813167      std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [21]
+                0.02    0.00  416589/813167      std::_Deque_iterator<state, state&, state*>::_S_buffer_size() [22]
+[18]     1.1    0.04    0.00  813167         std::__deque_buf_size(unsigned int) [18]
+-----------------------------------------------
+                0.01    0.03  198257/198257      std::deque<state, std::allocator<state> >::pop_front() [12]
+[19]     1.0    0.01    0.03  198257         std::deque<state, std::allocator<state> >::_M_pop_front_aux() [19]
+                0.00    0.02  198257/198273      std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [21]
+                0.00    0.01  198257/413720      std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+                0.00    0.00  198257/8326915     __gnu_cxx::new_allocator<state>::destroy(state*) [24]
+-----------------------------------------------
+                0.01    0.02  198257/198257      std::deque<state, std::allocator<state> >::push_back(state const&) [8]
+[20]     0.9    0.01    0.02  198257         std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+                0.00    0.01  198257/413720      std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+                0.00    0.01  198257/198273      std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [27]
+                0.00    0.00  198257/8326929     __gnu_cxx::new_allocator<state>::construct(state*, state const&) [15]
+                0.00    0.00  198257/198257      std::deque<state, std::allocator<state> >::_M_reserve_map_at_back(unsigned int) [30]
+-----------------------------------------------
+                0.00    0.00      16/198273      std::_Deque_base<state, std::allocator<state> >::_M_destroy_nodes(state**, state**) [44]
+                0.00    0.02  198257/198273      std::deque<state, std::allocator<state> >::_M_pop_front_aux() [19]
+[21]     0.6    0.00    0.02  198273         std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [21]
+                0.01    0.00  198273/198273      __gnu_cxx::new_allocator<state>::deallocate(state*, unsigned int) [26]
+                0.01    0.00  198273/813167      std::__deque_buf_size(unsigned int) [18]
+-----------------------------------------------
+                0.00    0.00    2869/416589      std::_Deque_iterator<state, state&, state*>::difference_type std::operator-<state, state&, state*, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [33]
+                0.00    0.02  413720/416589      std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+[22]     0.6    0.00    0.02  416589         std::_Deque_iterator<state, state&, state*>::_S_buffer_size() [22]
+                0.02    0.00  416589/813167      std::__deque_buf_size(unsigned int) [18]
+-----------------------------------------------
+                0.00    0.00      32/413720      std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.00    0.00   17174/413720      std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+                0.00    0.01  198257/413720      std::deque<state, std::allocator<state> >::_M_pop_front_aux() [19]
+                0.00    0.01  198257/413720      std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+[23]     0.6    0.00    0.02  413720         std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+                0.00    0.02  413720/416589      std::_Deque_iterator<state, state&, state*>::_S_buffer_size() [22]
+-----------------------------------------------
+                0.00    0.00  198257/8326915     std::deque<state, std::allocator<state> >::_M_pop_front_aux() [19]
+                0.01    0.00 8128658/8326915     std::deque<state, std::allocator<state> >::pop_front() [12]
+[24]     0.3    0.01    0.00 8326915         __gnu_cxx::new_allocator<state>::destroy(state*) [24]
+                0.00    0.00 8326915/8326929     state::~state() [59]
+-----------------------------------------------
+                0.00    0.00      14/8324428     void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+                0.01    0.00 8324414/8324428     std::deque<state, std::allocator<state> >::front() [9]
+[25]     0.3    0.01    0.00 8324428         std::_Deque_iterator<state, state&, state*>::operator*() const [25]
+-----------------------------------------------
+                0.01    0.00  198273/198273      std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [21]
+[26]     0.3    0.01    0.00  198273         __gnu_cxx::new_allocator<state>::deallocate(state*, unsigned int) [26]
+-----------------------------------------------
+                0.00    0.00      16/198273      std::_Deque_base<state, std::allocator<state> >::_M_create_nodes(state**, state**) [48]
+                0.00    0.01  198257/198273      std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+[27]     0.3    0.00    0.01  198273         std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [27]
+                0.01    0.00  198273/813167      std::__deque_buf_size(unsigned int) [18]
+                0.00    0.00  198273/198273      __gnu_cxx::new_allocator<state>::allocate(unsigned int, void const*) [61]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.2    0.01    0.00                 __tcf_0 [28]
+                0.00    0.00       8/8           std::queue<state, std::deque<state, std::allocator<state> > >::~queue() [46]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.2    0.01    0.00                 frame_dummy [29]
+-----------------------------------------------
+                0.00    0.00  198257/198257      std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [20]
+[30]     0.0    0.00    0.00  198257         std::deque<state, std::allocator<state> >::_M_reserve_map_at_back(unsigned int) [30]
+                0.00    0.00    8587/8587        std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+-----------------------------------------------
+                0.00    0.00    8587/8587        std::deque<state, std::allocator<state> >::_M_reserve_map_at_back(unsigned int) [30]
+[31]     0.0    0.00    0.00    8587         std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+                0.00    0.00   17174/413720      std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+                0.00    0.00    8587/8587        state** std::copy<state**, state**>(state**, state**, state**) [66]
+                0.00    0.00      24/40          unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [81]
+                0.00    0.00      24/40          std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+                0.00    0.00      24/40          std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+-----------------------------------------------
+                0.00    0.00       8/2869        std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00    2861/2869        std::queue<state, std::deque<state, std::allocator<state> > >::size() const [34]
+[32]     0.0    0.00    0.00    2869         std::deque<state, std::allocator<state> >::size() const [32]
+                0.00    0.00    2869/2869        std::_Deque_iterator<state, state&, state*>::difference_type std::operator-<state, state&, state*, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [33]
+-----------------------------------------------
+                0.00    0.00    2869/2869        std::deque<state, std::allocator<state> >::size() const [32]
+[33]     0.0    0.00    0.00    2869         std::_Deque_iterator<state, state&, state*>::difference_type std::operator-<state, state&, state*, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [33]
+                0.00    0.00    2869/416589      std::_Deque_iterator<state, state&, state*>::_S_buffer_size() [22]
+-----------------------------------------------
+                0.00    0.00    2861/2861        dijkstra(int const&, int const&, int const&, int const&) [2]
+[34]     0.0    0.00    0.00    2861         std::queue<state, std::deque<state, std::allocator<state> > >::size() const [34]
+                0.00    0.00    2861/2869        std::deque<state, std::allocator<state> >::size() const [32]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [37]
+[35]     0.0    0.00    0.00       1         global constructors keyed to X [35]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [36]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to X [35]
+[36]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [36]
+                0.00    0.00       8/8           std::queue<state, std::deque<state, std::allocator<state> > >::queue(std::deque<state, std::allocator<state> > const&) [42]
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::allocator<state> const&) [43]
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::~deque() [40]
+                0.00    0.00       8/8           std::allocator<state>::allocator() [97]
+                0.00    0.00       8/40          std::allocator<state>::~allocator() [78]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.0    0.00    0.00                 __do_global_ctors_aux [37]
+                0.00    0.00       1/1           global constructors keyed to X [35]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [39]
+[38]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.00    0.00      32/413720      std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [23]
+                0.00    0.00      32/813167      std::__deque_buf_size(unsigned int) [18]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_M_create_nodes(state**, state**) [48]
+                0.00    0.00      16/40          unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [81]
+                0.00    0.00      16/40          std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+-----------------------------------------------
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::deque(std::allocator<state> const&) [43]
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+[39]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [39]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&) [87]
+-----------------------------------------------
+                0.00    0.00       8/16          __static_initialization_and_destruction_0(int, int) [36]
+                0.00    0.00       8/16          std::queue<state, std::deque<state, std::allocator<state> > >::~queue() [46]
+[40]     0.0    0.00    0.00      16         std::deque<state, std::allocator<state> >::~deque() [40]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [45]
+                0.00    0.00      16/16          void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [47]
+                0.00    0.00      32/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+                0.00    0.00      16/24          std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() [84]
+                0.00    0.00      16/32          std::allocator<state>::allocator(std::allocator<state> const&) [82]
+                0.00    0.00      16/40          std::allocator<state>::~allocator() [78]
+-----------------------------------------------
+                0.00    0.00       8/8           std::queue<state, std::deque<state, std::allocator<state> > >::queue(std::deque<state, std::allocator<state> > const&) [42]
+[41]     0.0    0.00    0.00       8         std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00       8/16          std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [39]
+                0.00    0.00       8/2869        std::deque<state, std::allocator<state> >::size() const [32]
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [50]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+                0.00    0.00      16/40          std::allocator<state>::~allocator() [78]
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::get_allocator() const [94]
+                0.00    0.00       8/24          std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() [84]
+                0.00    0.00       8/32          std::allocator<state>::allocator(std::allocator<state> const&) [82]
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::end() const [95]
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::begin() const [96]
+-----------------------------------------------
+                0.00    0.00       8/8           __static_initialization_and_destruction_0(int, int) [36]
+[42]     0.0    0.00    0.00       8         std::queue<state, std::deque<state, std::allocator<state> > >::queue(std::deque<state, std::allocator<state> > const&) [42]
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+-----------------------------------------------
+                0.00    0.00       8/8           __static_initialization_and_destruction_0(int, int) [36]
+[43]     0.0    0.00    0.00       8         std::deque<state, std::allocator<state> >::deque(std::allocator<state> const&) [43]
+                0.00    0.00       8/16          std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [39]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [45]
+[44]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_M_destroy_nodes(state**, state**) [44]
+                0.00    0.00      16/198273      std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [21]
+-----------------------------------------------
+                0.00    0.00      16/16          std::deque<state, std::allocator<state> >::~deque() [40]
+[45]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [45]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_M_destroy_nodes(state**, state**) [44]
+                0.00    0.00      16/40          std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_impl::~_Deque_impl() [88]
+-----------------------------------------------
+                0.00    0.00       8/8           __tcf_0 [28]
+[46]     0.0    0.00    0.00       8         std::queue<state, std::deque<state, std::allocator<state> > >::~queue() [46]
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::~deque() [40]
+-----------------------------------------------
+                0.00    0.00      16/16          std::deque<state, std::allocator<state> >::~deque() [40]
+[47]     0.0    0.00    0.00      16         void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [47]
+                0.00    0.00      16/16          void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>) [49]
+                0.00    0.00      32/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+[48]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_M_create_nodes(state**, state**) [48]
+                0.00    0.00      16/198273      std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [27]
+-----------------------------------------------
+                0.00    0.00      16/16          void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [47]
+[49]     0.0    0.00    0.00      16         void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>) [49]
+                0.00    0.00      32/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+                0.00    0.00      16/16          void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+[50]     0.0    0.00    0.00       8         std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [50]
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>) [53]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+-----------------------------------------------
+                0.00    0.00      16/16          void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>) [49]
+[51]     0.0    0.00    0.00      16         void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+                0.00    0.00      30/30          bool std::operator!=<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [52]
+                0.00    0.00      14/8324428     std::_Deque_iterator<state, state&, state*>::operator*() const [25]
+                0.00    0.00      14/14          void std::_Destroy<state>(state*) [91]
+                0.00    0.00      14/14          std::_Deque_iterator<state, state&, state*>::operator++() [90]
+-----------------------------------------------
+                0.00    0.00      30/30          void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+[52]     0.0    0.00    0.00      30         bool std::operator!=<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [52]
+                0.00    0.00      30/9176611     bool std::operator==<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&) [16]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>) [50]
+[53]     0.0    0.00    0.00       8         std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>) [53]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type) [54]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>) [53]
+[54]     0.0    0.00    0.00       8         std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type) [54]
+                0.00    0.00       8/8324542     std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [14]
+                0.00    0.00       8/8           bool std::operator!=<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&) [99]
+-----------------------------------------------
+                0.00    0.00      14/8326929     void std::_Destroy<state>(state*) [91]
+                0.00    0.00 8326915/8326929     __gnu_cxx::new_allocator<state>::destroy(state*) [24]
+[59]     0.0    0.00    0.00 8326929         state::~state() [59]
+-----------------------------------------------
+                0.00    0.00 8326929/8326929     __gnu_cxx::new_allocator<state>::construct(state*, state const&) [15]
+[60]     0.0    0.00    0.00 8326929         operator new(unsigned int, void*) [60]
+-----------------------------------------------
+                0.00    0.00  198273/198273      std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [27]
+[61]     0.0    0.00    0.00  198273         __gnu_cxx::new_allocator<state>::allocate(unsigned int, void const*) [61]
+                0.00    0.00  198273/198273      __gnu_cxx::new_allocator<state>::max_size() const [62]
+-----------------------------------------------
+                0.00    0.00  198273/198273      __gnu_cxx::new_allocator<state>::allocate(unsigned int, void const*) [61]
+[62]     0.0    0.00    0.00  198273         __gnu_cxx::new_allocator<state>::max_size() const [62]
+-----------------------------------------------
+                0.00    0.00    8587/8587        state** std::copy<state**, state**>(state**, state**, state**) [66]
+[63]     0.0    0.00    0.00    8587         state** std::__copy_normal<false, false>::copy_n<state**, state**>(state**, state**, state**) [63]
+                0.00    0.00    8587/8587        state** std::__copy_aux<state**, state**>(state**, state**, state**) [65]
+-----------------------------------------------
+                0.00    0.00    8587/8587        state** std::__copy_aux<state**, state**>(state**, state**, state**) [65]
+[64]     0.0    0.00    0.00    8587         state** std::__copy<true, std::random_access_iterator_tag>::copy<state*>(state* const*, state* const*, state**) [64]
+-----------------------------------------------
+                0.00    0.00    8587/8587        state** std::__copy_normal<false, false>::copy_n<state**, state**>(state**, state**, state**) [63]
+[65]     0.0    0.00    0.00    8587         state** std::__copy_aux<state**, state**>(state**, state**, state**) [65]
+                0.00    0.00    8587/8587        state** std::__copy<true, std::random_access_iterator_tag>::copy<state*>(state* const*, state* const*, state**) [64]
+-----------------------------------------------
+                0.00    0.00    8587/8587        std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+[66]     0.0    0.00    0.00    8587         state** std::copy<state**, state**>(state**, state**, state**) [66]
+                0.00    0.00    8587/8587        state** std::__copy_normal<false, false>::copy_n<state**, state**>(state**, state**, state**) [63]
+-----------------------------------------------
+                0.00    0.00       8/88          std::_Deque_base<state, std::allocator<state> >::get_allocator() const [93]
+                0.00    0.00      80/88          std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [70]
+[67]     0.0    0.00    0.00      88         std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() const [67]
+-----------------------------------------------
+                0.00    0.00      80/80          std::allocator<state*>::allocator<state>(std::allocator<state> const&) [71]
+[68]     0.0    0.00    0.00      80         __gnu_cxx::new_allocator<state*>::new_allocator() [68]
+-----------------------------------------------
+                0.00    0.00      80/80          std::allocator<state*>::~allocator() [72]
+[69]     0.0    0.00    0.00      80         __gnu_cxx::new_allocator<state*>::~new_allocator() [69]
+-----------------------------------------------
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+[70]     0.0    0.00    0.00      80         std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [70]
+                0.00    0.00      80/88          std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() const [67]
+                0.00    0.00      80/80          std::allocator<state*>::allocator<state>(std::allocator<state> const&) [71]
+-----------------------------------------------
+                0.00    0.00      80/80          std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [70]
+[71]     0.0    0.00    0.00      80         std::allocator<state*>::allocator<state>(std::allocator<state> const&) [71]
+                0.00    0.00      80/80          __gnu_cxx::new_allocator<state*>::new_allocator() [68]
+-----------------------------------------------
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+[72]     0.0    0.00    0.00      80         std::allocator<state*>::~allocator() [72]
+                0.00    0.00      80/80          __gnu_cxx::new_allocator<state*>::~new_allocator() [69]
+-----------------------------------------------
+                0.00    0.00      16/56          std::allocator<state>::~allocator() [86]
+                0.00    0.00      40/56          std::allocator<state>::~allocator() [78]
+[73]     0.0    0.00    0.00      56         __gnu_cxx::new_allocator<state>::~new_allocator() [73]
+-----------------------------------------------
+                0.00    0.00      16/48          std::allocator<state>::allocator(std::allocator<state> const&) [85]
+                0.00    0.00      32/48          std::allocator<state>::allocator(std::allocator<state> const&) [82]
+[74]     0.0    0.00    0.00      48         __gnu_cxx::new_allocator<state>::new_allocator(__gnu_cxx::new_allocator<state> const&) [74]
+-----------------------------------------------
+                0.00    0.00      40/40          std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+[75]     0.0    0.00    0.00      40         __gnu_cxx::new_allocator<state*>::deallocate(state**, unsigned int) [75]
+-----------------------------------------------
+                0.00    0.00      40/40          std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+[76]     0.0    0.00    0.00      40         __gnu_cxx::new_allocator<state*>::allocate(unsigned int, void const*) [76]
+                0.00    0.00      40/40          __gnu_cxx::new_allocator<state*>::max_size() const [77]
+-----------------------------------------------
+                0.00    0.00      40/40          __gnu_cxx::new_allocator<state*>::allocate(unsigned int, void const*) [76]
+[77]     0.0    0.00    0.00      40         __gnu_cxx::new_allocator<state*>::max_size() const [77]
+-----------------------------------------------
+                0.00    0.00       8/40          __static_initialization_and_destruction_0(int, int) [36]
+                0.00    0.00      16/40          std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00      16/40          std::deque<state, std::allocator<state> >::~deque() [40]
+[78]     0.0    0.00    0.00      40         std::allocator<state>::~allocator() [78]
+                0.00    0.00      40/56          __gnu_cxx::new_allocator<state>::~new_allocator() [73]
+-----------------------------------------------
+                0.00    0.00      16/40          std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.00    0.00      24/40          std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+[79]     0.0    0.00    0.00      40         std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [79]
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [70]
+                0.00    0.00      40/40          __gnu_cxx::new_allocator<state*>::allocate(unsigned int, void const*) [76]
+                0.00    0.00      40/80          std::allocator<state*>::~allocator() [72]
+-----------------------------------------------
+                0.00    0.00      16/40          std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [45]
+                0.00    0.00      24/40          std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+[80]     0.0    0.00    0.00      40         std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [80]
+                0.00    0.00      40/80          std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [70]
+                0.00    0.00      40/40          __gnu_cxx::new_allocator<state*>::deallocate(state**, unsigned int) [75]
+                0.00    0.00      40/80          std::allocator<state*>::~allocator() [72]
+-----------------------------------------------
+                0.00    0.00      16/40          std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [38]
+                0.00    0.00      24/40          std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [31]
+[81]     0.0    0.00    0.00      40         unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&) [81]
+-----------------------------------------------
+                0.00    0.00       8/32          std::_Deque_base<state, std::allocator<state> >::get_allocator() const [93]
+                0.00    0.00       8/32          std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00      16/32          std::deque<state, std::allocator<state> >::~deque() [40]
+[82]     0.0    0.00    0.00      32         std::allocator<state>::allocator(std::allocator<state> const&) [82]
+                0.00    0.00      32/48          __gnu_cxx::new_allocator<state>::new_allocator(__gnu_cxx::new_allocator<state> const&) [74]
+-----------------------------------------------
+                0.00    0.00      32/32          std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&) [87]
+[83]     0.0    0.00    0.00      32         std::_Deque_iterator<state, state&, state*>::_Deque_iterator() [83]
+-----------------------------------------------
+                0.00    0.00       8/24          std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+                0.00    0.00      16/24          std::deque<state, std::allocator<state> >::~deque() [40]
+[84]     0.0    0.00    0.00      24         std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() [84]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&) [87]
+[85]     0.0    0.00    0.00      16         std::allocator<state>::allocator(std::allocator<state> const&) [85]
+                0.00    0.00      16/48          __gnu_cxx::new_allocator<state>::new_allocator(__gnu_cxx::new_allocator<state> const&) [74]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_impl::~_Deque_impl() [88]
+[86]     0.0    0.00    0.00      16         std::allocator<state>::~allocator() [86]
+                0.00    0.00      16/56          __gnu_cxx::new_allocator<state>::~new_allocator() [73]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [39]
+[87]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&) [87]
+                0.00    0.00      32/32          std::_Deque_iterator<state, state&, state*>::_Deque_iterator() [83]
+                0.00    0.00      16/16          std::allocator<state>::allocator(std::allocator<state> const&) [85]
+-----------------------------------------------
+                0.00    0.00      16/16          std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [45]
+[88]     0.0    0.00    0.00      16         std::_Deque_base<state, std::allocator<state> >::_Deque_impl::~_Deque_impl() [88]
+                0.00    0.00      16/16          std::allocator<state>::~allocator() [86]
+-----------------------------------------------
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::end() const [95]
+                0.00    0.00       8/16          std::deque<state, std::allocator<state> >::begin() const [96]
+[89]     0.0    0.00    0.00      16         std::_Deque_iterator<state, state const&, state const*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [89]
+-----------------------------------------------
+                0.00    0.00      14/14          void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+[90]     0.0    0.00    0.00      14         std::_Deque_iterator<state, state&, state*>::operator++() [90]
+-----------------------------------------------
+                0.00    0.00      14/14          void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type) [51]
+[91]     0.0    0.00    0.00      14         void std::_Destroy<state>(state*) [91]
+                0.00    0.00      14/8326929     state::~state() [59]
+-----------------------------------------------
+                0.00    0.00       8/8           std::allocator<state>::allocator() [97]
+[92]     0.0    0.00    0.00       8         __gnu_cxx::new_allocator<state>::new_allocator() [92]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::get_allocator() const [94]
+[93]     0.0    0.00    0.00       8         std::_Deque_base<state, std::allocator<state> >::get_allocator() const [93]
+                0.00    0.00       8/88          std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() const [67]
+                0.00    0.00       8/32          std::allocator<state>::allocator(std::allocator<state> const&) [82]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+[94]     0.0    0.00    0.00       8         std::deque<state, std::allocator<state> >::get_allocator() const [94]
+                0.00    0.00       8/8           std::_Deque_base<state, std::allocator<state> >::get_allocator() const [93]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+[95]     0.0    0.00    0.00       8         std::deque<state, std::allocator<state> >::end() const [95]
+                0.00    0.00       8/16          std::_Deque_iterator<state, state const&, state const*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [89]
+-----------------------------------------------
+                0.00    0.00       8/8           std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&) [41]
+[96]     0.0    0.00    0.00       8         std::deque<state, std::allocator<state> >::begin() const [96]
+                0.00    0.00       8/16          std::_Deque_iterator<state, state const&, state const*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [89]
+-----------------------------------------------
+                0.00    0.00       8/8           __static_initialization_and_destruction_0(int, int) [36]
+[97]     0.0    0.00    0.00       8         std::allocator<state>::allocator() [97]
+                0.00    0.00       8/8           __gnu_cxx::new_allocator<state>::new_allocator() [92]
+-----------------------------------------------
+                0.00    0.00       8/8           bool std::operator!=<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&) [99]
+[98]     0.0    0.00    0.00       8         bool std::operator==<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&) [98]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type) [54]
+[99]     0.0    0.00    0.00       8         bool std::operator!=<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&) [99]
+                0.00    0.00       8/8           bool std::operator==<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&) [98]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [35] global constructors keyed to X [97] std::allocator<state>::allocator() [8] std::deque<state, std::allocator<state> >::push_back(state const&)
+  [36] __static_initialization_and_destruction_0(int, int) [85] std::allocator<state>::allocator(std::allocator<state> const&) [43] std::deque<state, std::allocator<state> >::deque(std::allocator<state> const&)
+   [3] dequeue(int*, int*, int*) [78] std::allocator<state>::~allocator() [41] std::deque<state, std::allocator<state> >::deque(std::deque<state, std::allocator<state> > const&)
+   [4] enqueue(int, int, int) [86] std::allocator<state>::~allocator() [40] std::deque<state, std::allocator<state> >::~deque()
+   [2] dijkstra(int const&, int const&, int const&, int const&) [71] std::allocator<state*>::allocator<state>(std::allocator<state> const&) [10] std::queue<state, std::deque<state, std::allocator<state> > >::pop()
+  [17] state::state(int, int, int) [72] std::allocator<state*>::~allocator() [7] std::queue<state, std::deque<state, std::allocator<state> > >::push(state const&)
+  [59] state::~state()        [87] std::_Deque_base<state, std::allocator<state> >::_Deque_impl::_Deque_impl(std::allocator<state> const&) [6] std::queue<state, std::deque<state, std::allocator<state> > >::front()
+  [26] __gnu_cxx::new_allocator<state>::deallocate(state*, unsigned int) [88] std::_Deque_base<state, std::allocator<state> >::_Deque_impl::~_Deque_impl() [42] std::queue<state, std::deque<state, std::allocator<state> > >::queue(std::deque<state, std::allocator<state> > const&)
+  [24] __gnu_cxx::new_allocator<state>::destroy(state*) [79] std::_Deque_base<state, std::allocator<state> >::_M_allocate_map(unsigned int) [46] std::queue<state, std::deque<state, std::allocator<state> > >::~queue()
+  [61] __gnu_cxx::new_allocator<state>::allocate(unsigned int, void const*) [48] std::_Deque_base<state, std::allocator<state> >::_M_create_nodes(state**, state**) [64] state** std::__copy<true, std::random_access_iterator_tag>::copy<state*>(state* const*, state* const*, state**)
+  [15] __gnu_cxx::new_allocator<state>::construct(state*, state const&) [27] std::_Deque_base<state, std::allocator<state> >::_M_allocate_node() [65] state** std::__copy_aux<state**, state**>(state**, state**, state**)
+  [74] __gnu_cxx::new_allocator<state>::new_allocator(__gnu_cxx::new_allocator<state> const&) [44] std::_Deque_base<state, std::allocator<state> >::_M_destroy_nodes(state**, state**) [51] void std::__destroy_aux<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, __false_type)
+  [92] __gnu_cxx::new_allocator<state>::new_allocator() [80] std::_Deque_base<state, std::allocator<state> >::_M_deallocate_map(state**, unsigned int) [18] std::__deque_buf_size(unsigned int)
+  [73] __gnu_cxx::new_allocator<state>::~new_allocator() [38] std::_Deque_base<state, std::allocator<state> >::_M_initialize_map(unsigned int) [53] std::_Deque_iterator<state, state&, state*> std::uninitialized_copy<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>)
+  [75] __gnu_cxx::new_allocator<state*>::deallocate(state**, unsigned int) [21] std::_Deque_base<state, std::allocator<state> >::_M_deallocate_node(state*) [50] std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_a<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>)
+  [76] __gnu_cxx::new_allocator<state*>::allocate(unsigned int, void const*) [84] std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() [54] std::_Deque_iterator<state, state&, state*> std::__uninitialized_copy_aux<std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state const&, state const*>, std::_Deque_iterator<state, state&, state*>, __false_type)
+  [68] __gnu_cxx::new_allocator<state*>::new_allocator() [39] std::_Deque_base<state, std::allocator<state> >::_Deque_base(std::allocator<state> const&, unsigned int) [81] unsigned int const& std::max<unsigned int>(unsigned int const&, unsigned int const&)
+  [69] __gnu_cxx::new_allocator<state*>::~new_allocator() [45] std::_Deque_base<state, std::allocator<state> >::~_Deque_base() [66] state** std::copy<state**, state**>(state**, state**, state**)
+  [62] __gnu_cxx::new_allocator<state>::max_size() const [63] state** std::__copy_normal<false, false>::copy_n<state**, state**>(state**, state**, state**) [91] void std::_Destroy<state>(state*)
+  [77] __gnu_cxx::new_allocator<state*>::max_size() const [89] std::_Deque_iterator<state, state const&, state const*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [49] void std::_Destroy<std::_Deque_iterator<state, state&, state*> >(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>)
+  [93] std::_Deque_base<state, std::allocator<state> >::get_allocator() const [23] std::_Deque_iterator<state, state&, state*>::_M_set_node(state**) [47] void std::_Destroy<std::_Deque_iterator<state, state&, state*>, state>(std::_Deque_iterator<state, state&, state*>, std::_Deque_iterator<state, state&, state*>, std::allocator<state>)
+  [67] std::_Deque_base<state, std::allocator<state> >::_M_get_Tp_allocator() const [22] std::_Deque_iterator<state, state&, state*>::_S_buffer_size() [98] bool std::operator==<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&)
+  [70] std::_Deque_base<state, std::allocator<state> >::_M_get_map_allocator() const [14] std::_Deque_iterator<state, state&, state*>::_Deque_iterator(std::_Deque_iterator<state, state&, state*> const&) [16] bool std::operator==<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  [25] std::_Deque_iterator<state, state&, state*>::operator*() const [83] std::_Deque_iterator<state, state&, state*>::_Deque_iterator() [33] std::_Deque_iterator<state, state&, state*>::difference_type std::operator-<state, state&, state*, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  [94] std::deque<state, std::allocator<state> >::get_allocator() const [90] std::_Deque_iterator<state, state&, state*>::operator++() [99] bool std::operator!=<state, state const&, state const*>(std::_Deque_iterator<state, state const&, state const*> const&, std::_Deque_iterator<state, state const&, state const*> const&)
+  [95] std::deque<state, std::allocator<state> >::end() const [19] std::deque<state, std::allocator<state> >::_M_pop_front_aux() [52] bool std::operator!=<state, state&, state*>(std::_Deque_iterator<state, state&, state*> const&, std::_Deque_iterator<state, state&, state*> const&)
+  [32] std::deque<state, std::allocator<state> >::size() const [20] std::deque<state, std::allocator<state> >::_M_push_back_aux(state const&) [60] operator new(unsigned int, void*)
+  [96] std::deque<state, std::allocator<state> >::begin() const [31] std::deque<state, std::allocator<state> >::_M_reallocate_map(unsigned int, bool) [28] __tcf_0
+  [11] std::deque<state, std::allocator<state> >::empty() const [30] std::deque<state, std::allocator<state> >::_M_reserve_map_at_back(unsigned int) [29] frame_dummy
+  [34] std::queue<state, std::deque<state, std::allocator<state> > >::size() const [13] std::deque<state, std::allocator<state> >::begin() [1] main
+   [5] std::queue<state, std::deque<state, std::allocator<state> > >::empty() const [9] std::deque<state, std::allocator<state> >::front()
+  [82] std::allocator<state>::allocator(std::allocator<state> const&) [12] std::deque<state, std::allocator<state> >::pop_front()
